@@ -22,10 +22,12 @@ with upload of the all initial data from csv-files
 and providing the ways to upload the incremental data from csv-file.
 Also full rollback/delete of schema is included like a separate step.
 
-Here is the structure of project:
+Here is the structure of project folders:
 
-/dags => contains all DAGs (Python) like individual, so combined into pipelines with multisteps for deployment, 
-         upload or incremental upload.
-/ddl => contains Postres DDL for deployment schema and drop schema.
-/sql_reports => contains reports, produced by Postgres SQL queries.
-/upload => contains CVS-files (initial data, and incremential ones) to perform upload into schema.
+  /dags => contains all DAGs (Python) like individual, so combined into pipelines with multisteps for deployment, 
+           upload or incremental upload.
+		   All multisteps pipelines have postfixes as "_master_dag_000.py".
+		   All individual DAGs have no "_master_dag_"-wording inside their names.
+  /ddl => contains Postres DDL for deployment schema and drop schema.
+  /sql_reports => contains reports, produced by Postgres SQL queries.
+  /upload => contains CVS-files (initial data, and incremential ones) to perform upload into schema.
