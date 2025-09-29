@@ -1,0 +1,18 @@
+expense_type_id,expense_type_name
+0,No_Value
+1,Mortgage
+2,Loan
+3,Repair and Renovation
+4,Utilities Payments
+5,Grocery Goods
+6,Non-grocery Goods
+7,Mobile
+8,Services
+9,Automobile
+11,Medicine
+13,Transportation
+14,Others
+15,Gift
+16,Rental
+20,Education Expenses
+22,Restraunts and Cafeteria
